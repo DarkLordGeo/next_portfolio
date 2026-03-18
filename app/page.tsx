@@ -11,7 +11,7 @@ export default function Home() {
           <img alt="Lasha Ergeshidze" className="w-full h-full object-cover" src="https://media.licdn.com/dms/image/v2/D4D03AQEYKFC3UnyRuQ/profile-displayphoto-scale_200_200/B4DZns85VfGkAY-/0/1760617011160?e=1775692800&v=beta&t=TlmVRiieaJi1iqb0pel0CZiSDYcb3W1IGpCd_KiBCks" />
         </div>
         <div className="space-y-4">
-          <h1 className="text-4xl md:text-5xl font-extrabold tracking-tighter uppercase italic">Lasha Ergeshiidze</h1>
+          <h1 className="text-4xl md:text-5xl font-extrabold tracking-tighter uppercase italic">Lasha Ergeshidze</h1>
           <p className="text-xs font-bold uppercase tracking-[0.3em] text-stark-gray">Front end devloper</p>
           {/* <div className="inline-flex items-center gap-2 border border-black/10 px-3 py-1.5">
             <span className="blinking-dot"></span>
