@@ -151,6 +151,14 @@ export default function Home() {
         </div>
       </section>
 
+      {/* contact */}
+
+      <section className="mb-32"><h2 className="text-[10px] font-black uppercase tracking-[0.4em] text-stark-gray mb-8">Contact</h2>
+        <div className="space-y-4">
+          {/* <p className="text-[10px] font-black uppercase tracking-widest text-stark-gray">Get in touch</p> */}
+          <a className="block text-xl md:text-2xl font-light tracking-tight hover:text-accent transition-colors duration-300" href="mailto:mr.ergeshidze@gmail.com">mr.ergeshidze@gmail.com</a>
+        </div></section>
+
       <footer className="pt-24 border-t border-black/5 flex flex-col md:flex-row justify-between items-center gap-8">
         <div className="flex gap-8 text-[10px] font-black uppercase tracking-widest">
           <a className="hover:text-accent transition-colors" href="https://github.com/DarkLordGeo">GitHub</a>
