@@ -12,7 +12,7 @@ export default function Home() {
         </div>
         <div className="space-y-4">
           <h1 className="text-4xl md:text-5xl font-extrabold tracking-tighter uppercase italic">Lasha Ergeshidze</h1>
-          <p className="text-xs font-bold uppercase tracking-[0.3em] text-stark-gray">Front end devloper</p>
+          <p className="text-xs font-bold uppercase tracking-[0.3em] text-stark-gray">Front end developer</p>
           {/* <div className="inline-flex items-center gap-2 border border-black/10 px-3 py-1.5">
             <span className="blinking-dot"></span>
             <span className="text-[10px] font-black uppercase tracking-widest">Available for hire</span>
