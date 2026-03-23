@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   creator: "Lasha Ergeshidze",
 
   openGraph: {
-    title: "Frontend Developer Portfolio",
+    title: "lergeshidze",
     description:
       "Projects, skills, and experience in modern web development.",
     url: "https://your-domain.com",
@@ -48,6 +48,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      
       <body
 
         className="min-h-screen"

@@ -3,38 +3,11 @@
 
 
 @theme {
-                          /* "off-white": "#fcfcfc",
-                        "accent": "#00ff41",
-                        "stark-black": "#0a0a0a",
-                        "stark-gray": "#71717a" */
     --color-off-white:#fcfcfc;
     --color-accent:#00ff41;
     --color-stark-black:#0a0a0a;
     --color-stark-gray:#71717a
-
-  /* --color-primary: #135bec;
-  --color-background-dark: #101622; */
-  /* --color-background-light: hsl(0 0% 100%);
-  --color-background-dark: hsl(207 95% 8%);
-  --color-background-custom: hsl(187 71% 82%);
-  --color-background-pastel: hsl(279 100% 93%); */
 }
-
-        /* extend: {
-          colors: {
-            "primary": "#135bec",
-            "background-light": "#f6f6f8",
-            "background-dark": "#101622",
-          },
-          fontFamily: {
-            "display": ["Inter"]
-          },
-          borderRadius: { "DEFAULT": "0.5rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
-          animation: {
-            'pulse-fast': 'pulse 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite',
-          }
-        }, */
-
 
 
 
