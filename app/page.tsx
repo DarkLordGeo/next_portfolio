@@ -1,6 +1,9 @@
 // import Image from "next/image";cls
 import { ArrowUpRight } from 'lucide-react'
 import Link from 'next/link';
+import Image from 'next/image'
+import ProfilePicture from '../public/profile.jpg'
+
 export default function Home() {
   return (
     <div className="max-w-2xl mx-auto px-6 py-24 md:py-40">
@@ -8,7 +11,12 @@ export default function Home() {
       {/* header */}
       <header className="flex flex-col items-center text-center mb-32">
         <div className="w-20 h-20 rounded-full border border-black/10 flex items-center justify-center overflow-hidden mb-8 grayscale hover:grayscale-0 transition-all duration-500">
-          <img alt="Lasha Ergeshidze" className="w-full h-full object-cover" src="https://media.licdn.com/dms/image/v2/D4D03AQEYKFC3UnyRuQ/profile-displayphoto-scale_200_200/B4DZns85VfGkAY-/0/1760617011160?e=1775692800&v=beta&t=TlmVRiieaJi1iqb0pel0CZiSDYcb3W1IGpCd_KiBCks" />
+          <Image
+            src={'https://res.cloudinary.com/di4lzdrlk/image/upload/v1776505549/job_pfp_xiogtb.jpg'}
+            alt='Lasha ergeshidze'
+            width={100}
+            height={100}
+          />
         </div>
         <div className="space-y-4">
           <h1 className="text-4xl md:text-5xl font-extrabold tracking-tighter uppercase italic">Lasha Ergeshidze</h1>
