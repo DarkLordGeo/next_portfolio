@@ -3,7 +3,7 @@ import { ArrowUpRight } from 'lucide-react'
 import Link from 'next/link';
 import Image from 'next/image'
 import ProfilePicture from '../public/profile.jpg'
-
+import Resume from '../resume.pdf'
 export default function Home() {
   return (
     <div className="max-w-2xl mx-auto px-6 py-24 md:py-40">
@@ -52,6 +52,9 @@ export default function Home() {
               <li>React / Next.js</li>
               <li>TypeScript</li>
               <li>Redux Toolkit</li>
+              <li>RHF</li>
+              <li>Zod</li>
+              <li>Tanstack query</li>
               <li>Tailwind CSS</li>
               <li>SCSS</li>
             </ul>
@@ -165,7 +168,8 @@ export default function Home() {
         <div className="space-y-4">
           {/* <p className="text-[10px] font-black uppercase tracking-widest text-stark-gray">Get in touch</p> */}
           <a className="block text-xl md:text-2xl font-light tracking-tight hover:text-accent transition-colors duration-300" href="mailto:mr.ergeshidze@gmail.com">mr.ergeshidze@gmail.com</a>
-        </div></section>
+        </div>
+      </section>
 
       <footer className="pt-24 border-t border-black/5 flex flex-col md:flex-row justify-between items-center gap-8">
         <div className="flex gap-8 text-[10px] font-black uppercase tracking-widest">
