@@ -61,9 +61,9 @@ export default function Home() {
           <div>
             <h3 className="text-xs font-bold uppercase mb-4 border-l-2 border-accent pl-3">Back</h3>
             <ul className="text-sm space-y-2 font-medium">
+              <li>C#</li>
+              <li>.NET</li>
               <li>Python</li>
-              <li>Django</li>
-              <li>DRF</li>
               <li>SQLite</li>
               <li>Neon</li>
             </ul>
