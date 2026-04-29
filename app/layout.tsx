@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     title: "lergeshidze",
     description:
       "Projects, skills, and experience in modern web development.",
-    url: "https://your-domain.com",
+    url: "https://lergetree.netlify.app/",
     type: "website",
   },
 };
