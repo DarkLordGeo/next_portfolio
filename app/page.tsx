@@ -35,8 +35,8 @@ export default function Home() {
           <span className="bg-accent px-1 font-semibold">React</span> and{" "}
           <span className="bg-accent px-1 font-semibold">Next.js</span>.
           Learning backend with{" "}
-          <span className="bg-accent px-1 font-semibold">Python</span> and{" "}
-          <span className="bg-accent px-1 font-semibold">Django</span>.
+          <span className="bg-accent px-1 font-semibold">C#</span> and{" "}
+          <span className="bg-accent px-1 font-semibold">.NET</span>.
           Highly motivated, eager to learn, and passionate about building scalable web apps.
         </p>
       </section>
