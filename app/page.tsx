@@ -110,6 +110,48 @@ export default function Home() {
             </div>
           </a>
 
+          <a href="https://iptrackernetlify.netlify.app/">
+            <div className="minimal-card group hover:ml-1 transition-all cursor-pointer">
+              <div className="flex justify-between items-start mb-4">
+                <div className="flex items-center gap-3">
+                  <span className="blinking-dot"></span>
+                  <h3 className="text-lg font-extrabold uppercase tracking-tighter group-hover:underline decoration-accent decoration-2 cursorpoin">
+                    IP Tracker
+                  </h3>
+                </div>
+                <span className="material-symbols-outlined text-sm font-light group-hover:mr-1 transition-all">
+                  <ArrowUpRight width={14} height={20} />
+                </span>
+              </div>
+              <p className="text-sm text-stark-gray font-medium max-w-md">
+                Built with TypeScript, React, Vite, Tailwind CSS, Axios, Lucide React, and GitHub, IP Tracker is a responsive frontend application that displays IP address details, location data, and ISP information through a clean and modern user interface.
+              </p>
+              <div className="flex flex-wrap gap-2 mt-4">
+                <span className="text-[10px] font-black uppercase tracking-widest bg-black/5 px-2 py-1 border border-black/5">
+                  TypeScript
+                </span>
+                <span className="text-[10px] font-black uppercase tracking-widest bg-black/5 px-2 py-1 border border-black/5">
+                  React
+                </span>
+                <span className="text-[10px] font-black uppercase tracking-widest bg-black/5 px-2 py-1 border border-black/5">
+                  Vite
+                </span>
+                <span className="text-[10px] font-black uppercase tracking-widest bg-black/5 px-2 py-1 border border-black/5">
+                  Tailwind CSS
+                </span>
+                <span className="text-[10px] font-black uppercase tracking-widest bg-black/5 px-2 py-1 border border-black/5">
+                  Axios
+                </span>
+                <span className="text-[10px] font-black uppercase tracking-widest bg-black/5 px-2 py-1 border border-black/5">
+                  Lucide React
+                </span>
+                <span className="text-[10px] font-black uppercase tracking-widest bg-black/5 px-2 py-1 border border-black/5">
+                  GitHub
+                </span>
+              </div>
+            </div>
+          </a>
+
           <a href="https://heliotravel.ge/">
             <div className="minimal-card group hover:ml-1 transition-all cursor-pointer">
               <div className="flex justify-between items-start mb-4">
