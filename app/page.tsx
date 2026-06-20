@@ -31,7 +31,7 @@ export default function Home() {
       <section className="mb-32">
         <h2 className="text-[10px] font-black uppercase tracking-[0.4em] text-stark-gray mb-8">About</h2>
         <p className="text-xl md:text-2xl font-light leading-tight tracking-tight">
-          Junior Front-End Developer working with{" "}
+          Front-End Developer working with{" "}
           <span className="bg-accent px-1 font-semibold">React</span> and{" "}
           <span className="bg-accent px-1 font-semibold">Next.js</span>.
           Exploring backend development and building scalable web applications.
@@ -77,6 +77,7 @@ export default function Home() {
       </section>
 
       {/* projects */}
+
       <section className="mb-32">
         <h2 className="text-[10px] font-black uppercase tracking-[0.4em] text-stark-gray mb-6">Selected Works</h2>
         <div className="flex flex-col">
@@ -199,6 +200,55 @@ export default function Home() {
         </div>
       </section>
 
+      {/* hackathons */}
+
+      <section className="mb-32">
+        <h2 className="text-[10px] font-black uppercase tracking-[0.4em] text-stark-gray mb-6">Hackathons</h2>
+        <div className="flex flex-col">
+
+          <a href="https://www.linkedin.com/posts/lasha-ergeshidze-6822ba2a5_nakadi-hub-thanks-for-this-opportunity-ugcPost-7473395825214164992-gNQU/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEmMqkIBmCIVfUXBXue2osYVA-4Lk-o-Rkc">
+            <div className="minimal-card group cursor-pointer">
+              <div className="flex justify-between items-start mb-4">
+                <div className="flex items-center gap-3">
+                  <h3 className="text-lg font-extrabold uppercase tracking-tighter group-hover:underline decoration-accent decoration-2 cursorpoin">NakadiHub hackathon</h3>
+                </div>
+              </div>
+              <p className="text-sm text-stark-gray font-medium max-w">
+                Handled the front end for HackHub, a Georgian-language hackathon platform connecting student innovators across universities. Built responsive interfaces for seamless event discovery, administrative tracking, and an interactive matching engine that helps developers form cross-functional, skill-complementary teams under tight deadlines.
+              </p>
+            </div>
+            <Image
+              className="rounded-md mt-8 hover:scale-101 transition-all"
+              src={'https://media.licdn.com/dms/image/v2/D5622AQFMnwZxspr00g/feedshare-shrink_800/B56Z7aVi8xGgAg-/0/1781779542093?e=1783555200&v=beta&t=GRLjz-2eewsQmEYglsLKy7XWLfYG7171SIradZ02PSE'}
+              alt='Nakadi Hub hackathon image'
+              width={1000}
+              height={100}
+
+            />
+          </a>
+          <a href="https://cozy-nest-setup.lovable.app/">
+            <div className="minimal-card group hover:ml-1 transition-all cursor-pointer">
+              <div className="flex justify-between items-start mb-4">
+                <div className="flex items-center gap-3">
+                  <span className="blinking-dot"></span>
+                  <h3 className="text-lg font-extrabold uppercase tracking-tighter group-hover:underline decoration-accent decoration-2 cursorpoin">HackHub</h3>
+                </div>
+                <span className="material-symbols-outlined text-sm font-light group-hover:mr-1 transition-all">
+                  <ArrowUpRight width={14} height={20} />
+                </span>
+              </div>
+              <p className="text-sm text-stark-gray font-medium max-w-md">
+                HackHub is a Georgian-language platform for hackathons and student innovation. It lets students discover hackathons across universities, form teams based on complementary skills, and helps organizers publish events and manage applications. Think of it as a one-stop hub connecting student hackers with hackathons and teammates.
+              </p>
+            </div>
+          </a>
+
+
+
+
+        </div>
+      </section>
+
       {/* contact */}
 
       <section className="mb-32"><h2 className="text-[10px] font-black uppercase tracking-[0.4em] text-stark-gray mb-8">Contact</h2>
@@ -219,3 +269,4 @@ export default function Home() {
     </div>
   );
 }
+
