@@ -5,6 +5,7 @@
 @theme {
     --color-off-white:#fcfcfc;
     --color-accent:#00ff41;
+    --color-down:#ff0000;
     --color-stark-black:#0a0a0a;
     --color-stark-gray:#71717a
 }
@@ -23,6 +24,14 @@
             border-radius: 50%;
             display: inline-block;
             box-shadow: 0 0 8px theme('colors.accent');
+        }
+        .blinking-dot-down{
+            width: 6px;
+            height: 6px;
+            background-color: theme('colors.down');
+            border-radius: 50%;
+            display: inline-block;
+            box-shadow: 0 0 8px theme('colors.down');
         }
         .minimal-card {
             @apply border-b border-black/5 py-12 last:border-0;

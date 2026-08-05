@@ -79,7 +79,7 @@ export default function Home() {
       {/* projects */}
 
       <section className="mb-32">
-        <h2 className="text-[10px] font-black uppercase tracking-[0.4em] text-stark-gray mb-6">Selected Works</h2>
+        <h2 className="text-[10px] font-black uppercase tracking-[0.4em] text-stark-gray mb-6">Selected Frontend Works</h2>
         <div className="flex flex-col">
 
           <a href="https://itjobsgeorgia.netlify.app/">
@@ -157,7 +157,7 @@ export default function Home() {
             <div className="minimal-card group hover:ml-1 transition-all cursor-pointer">
               <div className="flex justify-between items-start mb-4">
                 <div className="flex items-center gap-3">
-                  <span className="blinking-dot"></span>
+                  <span className="blinking-dot-down"></span>
                   <h3 className="text-lg font-extrabold uppercase tracking-tighter group-hover:underline decoration-accent decoration-2 cursorpoin">Helio Travel</h3>
                 </div>
                 <span className="material-symbols-outlined text-sm font-light group-hover:mr-1 transition-all"><ArrowUpRight width={14} height={20} /></span>
@@ -197,8 +197,35 @@ export default function Home() {
               </div>
             </div>
           </a>
+
         </div>
       </section>
+
+      {/* <section className="mb-32">
+        <h2 className="text-[10px] font-black uppercase tracking-[0.4em] text-stark-gray mb-6">Selected C# Works</h2>
+        <div className="flex flex-col">
+
+          <a href="https://github.com/DarkLordGeo/SnakeXenzia">
+            <div className="minimal-card group hover:ml-1 transition-all cursor-pointer">
+              <div className="flex justify-between items-start mb-4">
+                <div className="flex items-center gap-3">
+                  <span className="blinking-dot"></span>
+                  <h3 className="text-lg font-extrabold uppercase tracking-tighter group-hover:underline decoration-accent decoration-2 cursorpoin">TicTacToe</h3>
+                </div>
+                <span className="material-symbols-outlined text-sm font-light group-hover:mr-1 transition-all">
+                  <ArrowUpRight width={14} height={20} />
+                </span>
+              </div>
+              <p className="text-sm text-stark-gray font-medium max-w-md">
+               A simple game written in C# using Console, showing output in terminal
+              </p>
+              <div className="flex flex-wrap gap-2 mt-4">
+                <span className="text-[10px] font-black uppercase tracking-widest bg-black/5 px-2 py-1 border border-black/5">C#</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </section> */}
 
       {/* hackathons */}
 
@@ -219,7 +246,7 @@ export default function Home() {
             </div>
             <Image
               className="rounded-md mt-8 hover:scale-101 transition-all"
-              src={'https://media.licdn.com/dms/image/v2/D5622AQFMnwZxspr00g/feedshare-shrink_800/B56Z7aVi8xGgAg-/0/1781779542093?e=1783555200&v=beta&t=GRLjz-2eewsQmEYglsLKy7XWLfYG7171SIradZ02PSE'}
+              src={'https://res.cloudinary.com/di4lzdrlk/image/upload/v1785907661/1781779542093_kumrv3.jpg'}
               alt='Nakadi Hub hackathon image'
               width={1000}
               height={100}
