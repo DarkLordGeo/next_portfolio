@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "Frontend Developer Portfolio",
+    default: "Lasha Ergeshidze",
     template: "%s | Frontend Developer",
   },
 
@@ -36,8 +36,6 @@ export const metadata: Metadata = {
     title: "lergeshidze",
     description:
       "Projects, skills, and experience in modern web development.",
-    url: "https://lergetree.netlify.app/",
-    type: "website",
   },
 };
 
