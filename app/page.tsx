@@ -2,7 +2,6 @@
 import { ArrowUpRight } from 'lucide-react'
 import Link from 'next/link';
 import Image from 'next/image'
-import ProfilePicture from '../public/profile.jpg'
 export default function Home() {
   return (
     <div className="max-w-2xl mx-auto px-6 py-24 md:py-40">
