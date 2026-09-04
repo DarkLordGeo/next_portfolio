@@ -36,15 +36,14 @@ export default function Home() {
                 </a>
               </div>
               <div className="flex flex-wrap items-center gap-x-5 gap-y-3 pt-1  mt-4 w-full">
-                <a className="text-sm font-medium text-white/60 hover:text-white transition-colors">Newsletter</a>
-                <a className="text-sm font-medium text-white/60 hover:text-white transition-colors">Resume</a>
+                <a className="text-sm font-medium text-white/60 hover:text-white transition-colors cursor-pointer">Resume</a>
 
                 <span aria-hidden="true" className="hidden sm:block w-px h-4 bg-[#1f1f1f]"></span>
                 <div className="flex items-center gap-4" data-testid="row-social-links">
                   <div className="flex items-center gap-4" data-testid="row-social-links">
                     {/* GitHub */}
                     <a
-                      href="https://github.com/YOUR_USERNAME"
+                      href="https://github.com/DarkLordGeo"
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label="GitHub"
@@ -68,7 +67,7 @@ export default function Home() {
 
                     {/* LinkedIn */}
                     <a
-                      href="https://www.linkedin.com/in/will-phillips-3b9a25191/"
+                      href="https://www.linkedin.com/in/lasha-ergeshidze-6822ba2a5/"
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label="LinkedIn"
@@ -92,7 +91,7 @@ export default function Home() {
 
                     {/* X */}
                     <a
-                      href="https://x.com/willsclips_"
+                      href="https://x.com/lerge_01"
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label="X"
@@ -115,7 +114,7 @@ export default function Home() {
 
                     {/* Bluesky */}
                     <a
-                      href="https://bsky.app/profile/YOUR_USERNAME.bsky.social"
+                      href="https://bsky.app/profile/lerge.bsky.social"
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label="Bluesky"
@@ -156,77 +155,102 @@ export default function Home() {
             </div>
 
             {/* Work experience */}
-            <div className="border-t border-b border-border flex items-center justify-between gap-4 py-4 px-2 -mx-2">
-              <span className="min-w-0">
-                <span className="text-sm font-medium">
-                  Full-Stack Developer
+            <div className="border-t border-b border-border divide-y divide-border">
+              <div className="flex items-center justify-between gap-4 py-4 px-2 -mx-2">
+                <span className="min-w-0">
+                  <span className="text-sm font-medium">
+                    SWE Intern
+                  </span>
+
+                  <span className="block text-xs text-[#999999]">
+                    Making Science
+                  </span>
                 </span>
 
-                <span className="block text-xs text-[#999999]">
-                  Independent / Self-Directed
+                <span className="text-xs text-[#999999] shrink-0">
+                  Sep 2026 - Present
                 </span>
-              </span>
+              </div>
 
-              <span className="text-xs text-[#999999] shrink-0">
-                2023 — 2026
-              </span>
+              <div className="flex items-center justify-between gap-4 py-4 px-2 -mx-2">
+                <span className="min-w-0">
+                  <span className="text-sm font-medium">
+                    Full-Stack Developer
+                  </span>
+
+                  <span className="block text-xs text-[#999999]">
+                    Independent / Self-Directed
+                  </span>
+                </span>
+
+                <span className="text-xs text-[#999999] shrink-0">
+                  2023 - 2026
+                </span>
+              </div>
             </div>
           </div>
         </section>
 
         {/* Featured Projects Section */}
-        <div className="space-y-3 max-w-2xl">
-          <h2 className="text-2xl md:text-3xl font-semibold">
-            Projects
-          </h2>
+        <section id="projects" className="border-t border-border scroll-mt-4 border-b">
+          <div className="mx-auto px-4 max-w-4xl py-20 space-y-8">
+            <div className="space-y-3 max-w-2xl">
+              <h2 className="text-2xl md:text-3xl font-semibold">
+                Projects
+              </h2>
 
-          <p className="text-base text-[#999999] leading-relaxed">
-            The projects I have built while working across frontend, backend,
-            databases, and full-stack development.
-          </p>
-        </div>
+              <p className="text-base text-[#999999] leading-relaxed">
+                The projects I have built while working across frontend, backend,
+                databases, and full-stack development.
+              </p>
+            </div>
 
-        {/* Projects */}
-        <div className="border-t border-b border-border divide-y divide-border">
-          <div className="flex items-center justify-between gap-4 py-4 px-2 -mx-2">
-            <span className="min-w-0">
-              <span className="text-sm font-medium">Site Inspector</span>
-              <span className="block text-xs text-[#999999]">
-                React · TypeScript · Flask · BeautifulSoup
-              </span>
-            </span>
+            {/* Projects */}
+            <div className="border-t border-b border-border divide-y divide-border">
 
-            <span className="text-xs text-[#999999] shrink-0">
-              2026
-            </span>
+              <div className="flex items-center justify-between gap-4 py-4 px-2 -mx-2">
+                <span className="min-w-0">
+                  <a
+                    href="https://clientflow-chi-two.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm font-medium hover:underline"
+                  >
+                    ClientFlow
+                  </a>
+                  <span className="block text-xs text-[#999999]">
+                    Next.js · TypeScript · Tailwind CSS · Radix UI
+                  </span>
+                </span>
+
+                <span className="text-xs text-[#999999] shrink-0">
+                  Aug 2026 - Sep 2026
+                </span>
+              </div>
+
+              <div className="flex items-center justify-between gap-4 py-4 px-2 -mx-2">
+                <span className="min-w-0">
+                  <a
+                    href="https://it-jobs-one.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm font-medium hover:underline"
+                  >
+                    ITJobsGeorgia
+                  </a>
+                  <span className="block text-xs text-[#999999]">
+                    React · TypeScript · Vite
+                  </span>
+                </span>
+
+                <span className="text-xs text-[#999999] shrink-0">
+                  Aug 2025 - Sep 2026
+                </span>
+              </div>
+
+            </div>
           </div>
-
-          <div className="flex items-center justify-between gap-4 py-4 px-2 -mx-2">
-            <span className="min-w-0">
-              <span className="text-sm font-medium">SportsGeorgia</span>
-              <span className="block text-xs text-[#999999]">
-                React · TypeScript · Django · REST API
-              </span>
-            </span>
-
-            <span className="text-xs text-[#999999] shrink-0">
-              2026
-            </span>
-          </div>
-
-          <div className="flex items-center justify-between gap-4 py-4 px-2 -mx-2">
-            <span className="min-w-0">
-              <span className="text-sm font-medium">Admin Board</span>
-              <span className="block text-xs text-[#999999]">
-                React · TypeScript · Redux · Zod
-              </span>
-            </span>
-
-            <span className="text-xs text-[#999999] shrink-0">
-              2025
-            </span>
-          </div>
-        </div>
+        </section>
 
         {/* Hackathons Section */}
         <section
@@ -307,21 +331,19 @@ export default function Home() {
         <div className="flex space-x-8">
           <a
             className="text-sm text-[#3C83F6] hover:text-[#3C83F6]/80 transition-colors hover:underline opacity-80 hover:opacity-100 uppercase tracking-widest"
-            href="#"
+            href="https://www.linkedin.com/in/lasha-ergeshidze-6822ba2a5/"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             LinkedIn
           </a>
           <a
             className="text-sm text-[#3C83F6] hover:text-[#3C83F6]/80 transition-colors hover:underline opacity-80 hover:opacity-100 uppercase tracking-widest"
-            href="#"
+            href="https://github.com/DarkLordGeo"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             GitHub
-          </a>
-          <a
-            className="text-sm text-[#3C83F6] hover:text-[#3C83F6]/80 transition-colors hover:underline opacity-80 hover:opacity-100 uppercase tracking-widest"
-            href="#"
-          >
-            ReadCV
           </a>
         </div>
       </footer>
