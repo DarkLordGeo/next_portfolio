@@ -36,8 +36,7 @@ export default function Home() {
                 </a>
               </div>
               <div className="flex flex-wrap items-center gap-x-5 gap-y-3 pt-1  mt-4 w-full">
-                <a className="text-sm font-medium text-white/60 hover:text-white transition-colors cursor-pointer">Resume</a>
-
+                <a target="_blank" rel="noopener noreferrer" href="/resume.pdf" className="text-sm font-medium text-white/60 hover:text-white transition-colors">Resume</a>
                 <span aria-hidden="true" className="hidden sm:block w-px h-4 bg-[#1f1f1f]"></span>
                 <div className="flex items-center gap-4" data-testid="row-social-links">
                   <div className="flex items-center gap-4" data-testid="row-social-links">
