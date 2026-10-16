@@ -90,7 +90,7 @@ export default function Home() {
 
                     {/* X */}
                     <a
-                      href="https://x.com/lerge_01"
+                      href="https://x.com/lashaergeshidze"
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label="X"
