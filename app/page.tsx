@@ -2,6 +2,68 @@
 import { ArrowUpRight } from 'lucide-react'
 import Link from 'next/link';
 import Image from 'next/image'
+
+type ProjectLink = { label: string; href: string };
+
+type FeaturedProject = {
+  title: string;
+  year: string;
+  description: string;
+  tech: string;
+  links: ProjectLink[];
+  image?: { src: string; width: number; height: number; alt: string };
+};
+
+// Featured projects: rendered as cards at the top of the Projects section.
+// The first link is the primary one (used for the title and screenshot).
+const featuredProjects: FeaturedProject[] = [
+  {
+    title: "Jobs.ge Ultra",
+    year: "2026",
+    description:
+      "Browser extension for jobs.ge, Georgia's largest job platform. It turns the vacancy list into a list with a side-by-side preview, highlights stated salaries, adds filtering and sorting, shows which companies are hiring, and comes with light and dark themes. Published on the Chrome Web Store.",
+    tech: "TypeScript · Preact · WXT · Chrome Extensions API",
+    links: [
+      { label: "Chrome Web Store", href: "https://chromewebstore.google.com/detail/palpojcckcfemnhcabieihoebgmjolma" },
+      { label: "Website", href: "https://jobsge-ultra.vercel.app/" },
+    ],
+    image: {
+      src: "/projects/jobsge-ultra.webp",
+      width: 1440,
+      height: 900,
+      alt: "Jobs.ge Ultra showing the vacancy list next to a vacancy preview with a salary card",
+    },
+  },
+  {
+    title: "ContextSnap",
+    year: "2026",
+    description:
+      "Privacy-focused desktop app that captures what you are working on (open windows, Git repositories, folders, running developer tools) as a Markdown snapshot with one shortcut, ready to paste into an AI chat. Everything stays local: no accounts, no telemetry.",
+    tech: "C# · .NET 10 · WPF",
+    links: [
+      { label: "Website", href: "https://contextsnap.vercel.app/" },
+      { label: "GitHub", href: "https://github.com/DarkLordGeo/ContextSnap" },
+    ],
+    image: {
+      src: "/projects/contextsnap.webp",
+      width: 1190,
+      height: 744,
+      alt: "ContextSnap website showing the capture shortcut and a snapshot pasted into an AI chat",
+    },
+  },
+  {
+    title: "Autumn Taiga",
+    year: "2026",
+    description:
+      "A small interactive 3D game: a third-person walk through a procedurally generated autumn forest, with streamed terrain, instanced trees, wind and falling leaves. Built with Fable 5.2 as an experiment in making a real project with AI.",
+    tech: "TypeScript · Three.js · Rapier · Vite",
+    links: [
+      { label: "Live demo", href: "https://autumn-taiga.vercel.app/" },
+      { label: "GitHub", href: "https://github.com/DarkLordGeo/autumn-taiga" },
+    ],
+  },
+];
+
 export default function Home() {
   return (
     <div className="antialiased selection:bg-[#3C83F6] selection:text-white font-sans text-base overflow-x-hidden bg-[#000000] text-[#FAFAFA]">
@@ -207,6 +269,77 @@ export default function Home() {
             {/* Projects */}
             <div className="border-t border-b border-border divide-y divide-border">
 
+              {featuredProjects.map((project) => (
+                <article
+                  key={project.title}
+                  className="grid gap-5 md:grid-cols-[2fr_3fr] md:gap-8 py-8 px-2 -mx-2"
+                >
+                  <a
+                    href={project.links[0].href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    tabIndex={-1}
+                    aria-hidden="true"
+                    className="block self-start"
+                  >
+                    {project.image ? (
+                      <Image
+                        className="w-full h-auto rounded-md border border-border"
+                        src={project.image.src}
+                        alt={project.image.alt}
+                        width={project.image.width}
+                        height={project.image.height}
+                        sizes="(min-width: 768px) 340px, 100vw"
+                      />
+                    ) : (
+                      <span className="flex aspect-[16/10] items-center justify-center rounded-md border border-border font-mono text-xs text-[#999999]">
+                        {project.title}
+                      </span>
+                    )}
+                  </a>
+
+                  <div className="min-w-0 space-y-3">
+                    <div className="flex items-baseline justify-between gap-4">
+                      <h3 className="text-lg font-semibold">
+                        <a
+                          href={project.links[0].href}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="hover:underline"
+                        >
+                          {project.title}
+                        </a>
+                      </h3>
+                      <span className="text-xs text-[#999999] shrink-0">
+                        {project.year}
+                      </span>
+                    </div>
+
+                    <p className="text-sm text-[#999999] leading-relaxed">
+                      {project.description}
+                    </p>
+
+                    <p className="text-xs text-[#999999]">{project.tech}</p>
+
+                    <ul className="flex flex-wrap gap-x-5 gap-y-2 pt-1">
+                      {project.links.map((link) => (
+                        <li key={link.href}>
+                          <a
+                            href={link.href}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-1 text-sm font-medium text-white/80 hover:text-white transition-colors"
+                          >
+                            {link.label}
+                            <ArrowUpRight className="w-3.5 h-3.5" aria-hidden="true" />
+                          </a>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </article>
+              ))}
+
               <div className="flex items-center justify-between gap-4 py-4 px-2 -mx-2">
                 <span className="min-w-0">
                   <a
@@ -264,6 +397,45 @@ export default function Home() {
             </div>
 
             <div className="space-y-16">
+              {/* Hacktoberfest Georgia */}
+              <div className="space-y-6">
+                <a
+                  href="https://www.linkedin.com/posts/lasha-ergeshidze-6822ba2a5_had-a-great-time-at-hacktoberfest-georgia-share-7517851591060856832-spug/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block"
+                >
+                  <Image
+                    className="rounded-md mt-8 w-full h-auto"
+                    src="https://media.licdn.com/dms/image/v2/D4D22AQFO2wYpJj2qOA/feedshare-shrink_800/B4DaFTGL1hH8Ac-/0/1792395493173?e=2147483647&v=beta&t=QJ39jXsGPMUhqEh1923tLXxAouw2hHbbzu6nBt_PClA"
+                    alt="Hacktoberfest Georgia 2026"
+                    width={800}
+                    height={602}
+                  />
+                </a>
+
+                <div className="flex flex-col md:flex-row md:justify-between md:items-baseline gap-2">
+                  <a
+                    href="https://www.linkedin.com/posts/lasha-ergeshidze-6822ba2a5_had-a-great-time-at-hacktoberfest-georgia-share-7517851591060856832-spug/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-semibold text-2xl text-[#FAFAFA] hover:underline"
+                  >
+                    Hacktoberfest Georgia
+                  </a>
+
+                  <span className="text-xs text-[#999999] tracking-widest uppercase">
+                    2026
+                  </span>
+                </div>
+
+                <p className="text-base text-[#999999] leading-relaxed">
+                  Took part in Hacktoberfest Georgia with a team of friends.
+                </p>
+
+                <div className="border-b border-[#1f1f1f] pt-8"></div>
+              </div>
+
               {/* Featured Hackathon */}
               <div className="space-y-6">
                 <a
